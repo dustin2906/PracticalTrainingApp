@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.mystyle {
+  background-color: orangered!important;
+  color:white!important;
+  }
+  tr:hover {background-color:#ff751a!important;}
+
+.information {
+  color:white!important;
+  background-color: orangered!important;
+  text-decoration:none!important;
+  border-radius: 40px;
+  padding: 10px;
+  
+}
+.information:hover {
+  background-color: black!important;
+}
+.mystyle2 {
+  text-decoration:none!important;
+}
+.title {
+  color:orangered!important;
+}
+
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  transform: translate(-50%,-50%);
+  background: #2f3640!important;
+  height: 60px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt {
+  width: 240px!important;
+  padding: 0 6px;
+
+
+}
+.search-box:hover > .search-btn {
+  background: white!important;
+  
+  
+}
+.search-btn {
+  color:#e84118!important;
+  float:right;
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+  background:#2f3640!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.search-txt {
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white!important;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px!important;
+}
+
+
+.login-box {
+  border-radius: 40px;
+  padding: 10px;
+  background:#2f3640!important;
+  color:#e84118!important;
+}
+.login-box:hover {
+  background: white!important;
+}
+
+.th, td {
+  padding: 10px;
+  margin:10px;
+}
+
+
+.footer1 {
+  background:#2f3640!important;
+  color:#e84118!important;
+}
