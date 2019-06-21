@@ -12,7 +12,6 @@ if(!isset($_SESSION['user'])) $page='login';
 header('Cache-control:no-cache, no-store, must-revalidate');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +46,7 @@ header('Cache-control:no-cache, no-store, must-revalidate');
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top mystyle">
       <a class="navbar-brand" href="SuptrainApplication.php"><img src="img/menu_amk_fi.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -63,7 +62,7 @@ header('Cache-control:no-cache, no-store, must-revalidate');
             <a class="nav-link" href="SuptrainApplication.php?page=supervisors">Supervisors</a>
           </li>
           <li class="nav-item dropdown <?php if($page=='allstudents') echo 'active'?>">
-            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Students</a>
+            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Students </a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="SuptrainApplication.php?page=allstudents" id="allstudents">All students</a>
               <a class="dropdown-item" href="SuptrainApplication.php?page=trainingPlaceandStudent">Students in Training </a>
@@ -71,7 +70,7 @@ header('Cache-control:no-cache, no-store, must-revalidate');
             </div>
           </li>
         </ul>
-        <div id='bu'>
+        </div>
        
 		
      <?php
@@ -105,7 +104,8 @@ header('Cache-control:no-cache, no-store, must-revalidate');
 
     <!-- Page Header -->
     <header class="masthead" style="background-image: url('img/home-bg.jpg')">
-      <div class="overlay"></div>
+      <div class="overlay">
+      </div>
       <div class="container">
         <div class="row">
           
@@ -113,14 +113,13 @@ header('Cache-control:no-cache, no-store, must-revalidate');
             <div class="site-heading">
             
               <h2>SupTrain Application</h2>
-              <span class="subheading">Web application for practical training to help tutor teacher can manage student easily during practical training.</span>
+              <span class="subheading"> Web application for practical training to help tutor teacher can manage student easily during practical training.</span>
               
               <div id="mainlogin">
-              <?php 
-              if($page=='userinfo') include('php/userinfo.php');
+                <?php 
+                if($page=='userinfo') include('php/userinfo.php');
                 ?>
               </div>
-              
             </div>
           </div>
         </div>
@@ -131,43 +130,43 @@ header('Cache-control:no-cache, no-store, must-revalidate');
     <main role="main" class="container">
       <div class="row">
         <div class="col-lg-8
-          col-md-10  ">
+                    col-md-10  ">
           <div class="post-preview">
             <div id="maininfo">
               <a href="#" id="showall">Show all</a>
-              </div>
-              <div id="maincontent">
+            </div>
+            <div id="maincontent">
               <div class="row">
-		<div class="col-sm-2">
-    </div>
-		<div class="col-sm-12">
-		<?php
-			//Here is the place for selecting the content to be displayed
-			//based on user actions -> clicking menus etc
-			if($page=='supervisors') include('php/supervisors.php');
-			elseif($page=='newSupervisor') include('php/newSupervisor.php');
-			elseif($page=='supervisorinfo') include('php/supervisorinfo.php');
-      elseif($page=='editSupervisor') include('php/editSupervisor.php');
-      elseif($page=='organisations') include('php/organisations.php');
-      elseif($page=='newOrganisation') include('php/newOrganisation.php');
-			elseif($page=='organisationInfo') include('php/organisationInfo.php');
-      elseif($page=='editOrganisation') include('php/editOrganisation.php');
-      elseif($page=='ontraining') include('php/ontrainingnow.php');
-      elseif($page=='thisyear') include('php/thisyear.php');
-      elseif($page=='notfinish') include('php/notfinish.php');
-      elseif($page=='finished') include('php/finished.php');
-      elseif($page=='allstudents') include('php/allstudents.php');
-      elseif($page=='newStudent') include('php/newStudent.php');
-			elseif($page=='studentInfo') include('php/studentInfo.php');
-      elseif($page=='editStudent') include('php/editStudent.php');
-      elseif($page=='trainingPlaceandStudent') include('php/trainingPlaceandStudent.php');
-		?>
-		</div>
-	  </div>
+		            <div class="col-sm-2">
+                </div>
+		              <div class="col-sm-12">
+		                  <?php
+                      //Here is the place for selecting the content to be displayed
+                      //based on user actions -> clicking menus etc
+                      if($page=='supervisors') include('php/supervisors.php');
+                      elseif($page=='newSupervisor') include('php/newSupervisor.php');
+                      elseif($page=='supervisorinfo') include('php/supervisorinfo.php');
+                      elseif($page=='editSupervisor') include('php/editSupervisor.php');
+                      elseif($page=='organisations') include('php/organisations.php');
+                      elseif($page=='newOrganisation') include('php/newOrganisation.php');
+                      elseif($page=='organisationInfo') include('php/organisationInfo.php');
+                      elseif($page=='editOrganisation') include('php/editOrganisation.php');
+                      elseif($page=='ontraining') include('php/ontrainingnow.php');
+                      elseif($page=='thisyear') include('php/thisyear.php');
+                      elseif($page=='notfinish') include('php/notfinish.php');
+                      elseif($page=='finished') include('php/finished.php');
+                      elseif($page=='allstudents') include('php/allstudents.php');
+                      elseif($page=='newStudent') include('php/newStudent.php');
+                      elseif($page=='studentInfo') include('php/studentInfo.php');
+                      elseif($page=='editStudent') include('php/editStudent.php');
+                      elseif($page=='trainingPlaceandStudent') include('php/trainingPlaceandStudent.php');
+		                  ?>
+		              </div>
+	              </div>
               </div>
+          </div>
         </div>
       </div>
-    </div>
     </main>
 
     <hr>
@@ -221,24 +220,25 @@ header('Cache-control:no-cache, no-store, must-revalidate');
 	<div id="loginfrm" class="modal fade" role="dialog">
     <div class="modal-dialog">
      <!-- Modal content-->
-     <div class="modal-content">
-     <div class="modal-header">
-       <h3 class="modal-title">Login</h3>
-       <button type="button" class="close" data-dismiss="modal">&times;</button>
-     </div>
-     <div class="modal-body">
-      <form class="form-signin" id="frmlogin">
-       Email: <input class="form-control" type="email" id="email"   placeholder="Email" required >
-       Password: <input class="form-control" type="password" id="password"  placeholder="Password" required >
-       <input class="btn btn-lg btn-primary btn-block" type="submit" id="loginbtn" value="Login" >
-      </form>
-      <div id="logininfo"></div><!--Used to display messages, fail etc-->
-       </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-     </div>
-     </div>
-    </div>
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3 class="modal-title">Login</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+            <div class="modal-body">
+                <form class="form-signin" id="frmlogin">
+                  Email: <input class="form-control" type="email" id="email"   placeholder="Email" required >
+                  Password: <input class="form-control" type="password" id="password"  placeholder="Password" required >
+                  <input class="btn btn-lg btn-primary btn-block" type="submit" id="loginbtn" value="Login" >
+                </form>
+              <div id="logininfo"></div><!--Used to display messages, fail etc-->
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+      </div>
    </div>
    <!--loginfrm ends-->
    
@@ -270,7 +270,7 @@ header('Cache-control:no-cache, no-store, must-revalidate');
    <!--showStudent ends-->
    <!--addTraining starts here-->
      <div class="modal" id="addTraining">
-    <div class="modal-dialog">
+      <div class="modal-dialog">
        <div class="modal-content">
        <!-- Modal Header -->
        <div class="modal-header">
